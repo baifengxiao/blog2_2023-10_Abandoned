@@ -5,6 +5,5 @@ description:
 tags: 
   - 
 categories: 
-  - 
-mathjax: true
+  -
 ---
