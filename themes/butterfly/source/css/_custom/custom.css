@@ -1199,13 +1199,13 @@ button#go-up:hover #percent {
 
 /* 个人信息卡片背景图 */
 [data-theme="light"] #aside-content > .card-widget.card-info {
-  background-image: url(https://tuchuang.voooe.cn/images/2023/02/28/springBg.png);
+  background-image: url(https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/springBg.png);
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: 100%;
 }
 [data-theme="dark"] #aside-content > .card-widget.card-info {
-  background-image: url(https://tuchuang.voooe.cn/images/2023/02/28/aurora.webp);
+  background-image: url(https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/aurora.webp);
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: 100%;
@@ -1271,7 +1271,7 @@ input#pic-link {
 
 /* heo 加载动画头像 */
 .loading-img {
-  background: url(https://tuchuang.voooe.cn/images/2023/01/02/avatar.webp)
+  background: url(https://cdn.this0.com/blog/base/avatar.png)
     no-repeat center center;
   background-size: cover;
 }
@@ -1710,13 +1710,13 @@ a:hover {
   background: rgba(25, 25, 25, 0.95) !important;
 }
 
-/* 帧率检测 */
-#fps {
-  position: fixed;
-  left: 10px;
-  bottom: 10px;
-  z-index: 1919810;
-}
+/*!* 帧率检测 *!*/
+/*#fps {*/
+/*  position: fixed;*/
+/*  left: 10px;*/
+/*  bottom: 10px;*/
+/*  z-index: 1919810;*/
+/*}*/
 [data-theme="light"] #fps {
   background-color: rgba(255, 255, 255, 0.85);
   backdrop-filter: var(--backdrop-filter);

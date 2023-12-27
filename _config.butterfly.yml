@@ -18,7 +18,7 @@ menu:
     网站统计: /wangzhan/census/ || icon-wenzhangtongji
     留言板: /wangzhan/comments/ || icon-liuyanban
     时间轴: /wangzhan/timeline/ || icon-shijianzhou
-  个人||geren:
+  个人||icon-geren:
     唠叨: /geren/laodao/ || icon-laodao
     秘密花园: /geren/secret/ || icon-mimi
     关于: /geren/about/ || icon-guanyu
@@ -1071,7 +1071,7 @@ envelope_comment:
     - 哪怕是有什么想吃的，都可以告诉我哦~
   bottom: 为您服务！ #仅支持单行文本
   height: #1050px，信封划出的高度
-  path: #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
+  path: wangzhan/comments #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
   front_matter: #【可选】comments页面的 front_matter 配置
     title: 留言板
     comments: true
