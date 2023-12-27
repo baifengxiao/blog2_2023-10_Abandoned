@@ -3,23 +3,23 @@ title: Markdown语法与外挂标签写法汇总
 description: 🥧本文汇总Markdown格式以及外挂标签在网页端的渲染效果，可作为文档进行查询
 mathjax: true
 tags:
-  - Markdown
-  - 外挂标签
+   - Markdown
+   - 网站说明文档
 categories:
-  - 演示
+   - 网站说明文档
 abbrlink: 2013454d
-sticky: 2
 swiper_index: 2
-date: 2022-08-09 18:19:03
-updated: 2022-10-23 22:00:00
+date: 2023-10-26 05:36:00
+copyright_author: Fomalhaut # 作者覆写
+copyright_url: https://www.fomal.cc/posts/2013454d.html # 原文链接覆写
 ---
 
-# 1.Markdown语法自带格式
+# Markdown语法自带格式
 {% note info flat %}参考：[Markdown语法图文全面详解(10分钟学会)](https://blog.csdn.net/u014061630/article/details/81359144){% endnote %}
 {% note warning flat %}注意：此页面偶尔会存在CSS冲突问题!{% endnote %}
 
 
-## 1.1 代码块
+## 代码块
 
 {% tabs 分栏 %}
 
@@ -60,7 +60,7 @@ git push
 {% endtabs %}
 
 
-## 1.2 多级标题
+## 多级标题
 {% tabs 分栏 %}
 
 <!-- tab 示例源码 -->
@@ -80,7 +80,7 @@ git push
 
 {% endtabs %}
 
-## 1.3 文字样式
+## 文字样式
 
 {% tabs 分栏 %}
 
@@ -128,7 +128,7 @@ git push
 {% endnote %}
 
 
-## 1.4 引用
+## 引用
 
 {% tabs 分栏 %}
 
@@ -142,7 +142,7 @@ git push
 > >事务
 > >
 > >**行级锁**(引用内部一样可以用格式)
-> 
+>
 > ....
 ```
 <!-- endtab -->
@@ -156,7 +156,7 @@ git push
 > >事务
 > >
 > >**行级锁**(引用内部一样可以用格式)
-> 
+>
 > ....
 <!-- endtab -->
 
@@ -164,7 +164,7 @@ git push
 
 
 
-## 1.5 分割线
+## 分割线
 {% tabs 分栏 %}
 
 <!-- tab 示例源码 -->
@@ -184,8 +184,8 @@ git push
 
 
 
-## 1.6 列表(*,+,-跟空格都可以)
-### 1.6.1 无序列表
+## 列表(*,+,-跟空格都可以)
+### 无序列表
 {% tabs 分栏 %}
 
 <!-- tab 示例源码 -->
@@ -222,29 +222,29 @@ git push
 
 
 
-### 1.6.2 有序列表
+### 有序列表
 {% tabs 分栏 %}
 
 <!-- tab 示例源码 -->
 ```Markdown
 # 注意后面有空格
-1. 
-2. 
-3. 
+1.
+2.
+3.
 4. 
 ```
 <!-- endtab -->
 
 <!-- tab 渲染演示 -->
-1. 
-2. 
-3. 
-4. 
+1.
+2.
+3.
+4.
 <!-- endtab -->
 
 {% endtabs %}
 
-## 1.7 图片
+## 图片
 
 {% tabs 分栏 %}
 
@@ -258,16 +258,14 @@ git push
 <!-- endtab -->
 
 <!-- tab 渲染演示 -->
-本地图片:
-<img src="/assets/pusheencode.webp" alt="示例图片" style="zoom:50%;" />
 在线图片:
-![code](https://cdn.jsdelivr.net/gh/fomalhaut1998/markdown_pic/img/code.png)
+![code](http://cdn.this0.com/blog/img/code.png?OSSAccessKeyId=LTAI5tAje5MhbPSKCC6QdGZb&Expires=9000000001&Signature=BF5BnJQssxI7yyVHk2Lt1WCoCLI=&x-oss-process=style/cdn.this0)
 <!-- endtab -->
 
 {% endtabs %}
 
 
-## 1.8 表格
+## 表格
 
 {% tabs 分栏 %}
 
@@ -294,7 +292,7 @@ git push
 
 
 
-## 1.9 公式
+## 公式
 
 {% tabs 分栏 %}
 
@@ -316,10 +314,10 @@ $$
 
 
 
-# 2.Butterfly外挂标签
+# Butterfly外挂标签
 {% note info flat %}这部分参考安知鱼:[基于Butterfly的外挂标签引入](https://anzhiy.cn/posts/7d58.html){% endnote %}
 
-## 2.1 行内文本样式 text
+## 行内文本样式 text
 
 {% tabs 分栏 %}
 <!-- tab 标签语法 -->
@@ -357,7 +355,7 @@ $$
 
 
 
-## 2.2 行内文本 span
+## 行内文本 span
 
 {% tabs 分栏 %}
 
@@ -379,29 +377,29 @@ $$
 <!-- tab 示例源码 -->
 ```Markdown
 - 彩色文字
-在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
+  在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
 - 超大号文字
-文档「开始」页面中的标题部分就是超大号文字。
-{% span center logo large, Volantis %}
-{% span center small, A Wonderful Theme for Hexo %}
+  文档「开始」页面中的标题部分就是超大号文字。
+  {% span center logo large, Volantis %}
+  {% span center small, A Wonderful Theme for Hexo %}
 ```
 <!-- endtab -->
 
 <!-- tab 渲染演示 -->
 - 彩色文字
-在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
+  在一段话中方便插入各种颜色的标签，包括：{% span red, 红色 %}、{% span yellow, 黄色 %}、{% span green, 绿色 %}、{% span cyan, 青色 %}、{% span blue, 蓝色 %}、{% span gray, 灰色 %}。
 - 超大号文字
-文档「开始」页面中的标题部分就是超大号文字。
-{% span center logo large, Volantis %}
-{% span center small, A Wonderful Theme for Hexo %}
-<!-- endtab -->
+  文档「开始」页面中的标题部分就是超大号文字。
+  {% span center logo large, Volantis %}
+  {% span center small, A Wonderful Theme for Hexo %}
+  <!-- endtab -->
 
 {% endtabs %}
 
 
 
 
-## 2.3 段落文本 p
+## 段落文本 p
 {% tabs 分栏 %}
 
 <!-- tab 标签语法 -->
@@ -422,28 +420,28 @@ $$
 <!-- tab 示例源码 -->
 ```Markdown
 - 彩色文字
-在一段话中方便插入各种颜色的标签，包括：{% p red, 红色 %}、{% p yellow, 黄色 %}、{% p green, 绿色 %}、{% p cyan, 青色 %}、{% p blue, 蓝色 %}、{% p gray, 灰色 %}。
+  在一段话中方便插入各种颜色的标签，包括：{% p red, 红色 %}、{% p yellow, 黄色 %}、{% p green, 绿色 %}、{% p cyan, 青色 %}、{% p blue, 蓝色 %}、{% p gray, 灰色 %}。
 - 超大号文字
-文档「开始」页面中的标题部分就是超大号文字。
-{% p center logo large, Volantis %}
-{% p center small, A Wonderful Theme for Hexo %}
+  文档「开始」页面中的标题部分就是超大号文字。
+  {% p center logo large, Volantis %}
+  {% p center small, A Wonderful Theme for Hexo %}
 ```
 <!-- endtab -->
 
 <!-- tab 渲染演示 -->
 - 彩色文字
-在一段话中方便插入各种颜色的标签，包括：{% p red, 红色 %}、{% p yellow, 黄色 %}、{% p green, 绿色 %}、{% p cyan, 青色 %}、{% p blue, 蓝色 %}、{% p gray, 灰色 %}。
+  在一段话中方便插入各种颜色的标签，包括：{% p red, 红色 %}、{% p yellow, 黄色 %}、{% p green, 绿色 %}、{% p cyan, 青色 %}、{% p blue, 蓝色 %}、{% p gray, 灰色 %}。
 - 超大号文字
-文档「开始」页面中的标题部分就是超大号文字。
-{% p center logo large, Volantis %}
-{% p center small, A Wonderful Theme for Hexo %}
-<!-- endtab -->
+  文档「开始」页面中的标题部分就是超大号文字。
+  {% p center logo large, Volantis %}
+  {% p center small, A Wonderful Theme for Hexo %}
+  <!-- endtab -->
 
 {% endtabs %}
 
 
 
-## 2.4 引用note
+## 引用note
 
 
 {% tabs 分栏 %}
@@ -452,17 +450,17 @@ $$
 
 ```Markdown
 note:
-  # Note tag style values:
-  #  - simple    bs-callout old alert style. Default.
-  #  - modern    bs-callout new (v2-v3) alert style.
-  #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
-  #  - disabled  disable all CSS styles import of note tag.
-  style: simple
-  icons: false
-  border_radius: 3
-  # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
-  # Offset also applied to label tag variables. This option can work with disabled note tag.
-  light_bg_offset: 0
+# Note tag style values:
+#  - simple    bs-callout old alert style. Default.
+#  - modern    bs-callout new (v2-v3) alert style.
+#  - flat      flat callout style with background, like on Mozilla or StackOverflow.
+#  - disabled  disable all CSS styles import of note tag.
+style: simple
+icons: false
+border_radius: 3
+# Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
+# Offset also applied to label tag variables. This option can work with disabled note tag.
+light_bg_offset: 0
 ```
 <!-- endtab -->
 
@@ -865,7 +863,7 @@ Any content (support inline tags too.io).
 {% endtabs %}
 
 
-## 2.5 上标标签 tip
+## 上标标签 tip
 
 {% tabs 分栏 %}
 
@@ -919,7 +917,7 @@ Any content (support inline tags too.io).
 
 
 
-## 2.6 动态标签 anima
+## 动态标签 anima
 
 {% tabs 分栏 %}
 
@@ -979,7 +977,7 @@ Any content (support inline tags too.io).
 {% endtabs %}
 
 
-## 2.7 复选列表 checkbox
+## 复选列表 checkbox
 
 {% tabs 分栏 %}
 
@@ -1028,7 +1026,7 @@ Any content (support inline tags too.io).
 {% endtabs %}
 
 
-## 2.8 单选列表 radio
+## 单选列表 radio
 
 {% tabs 分栏 %}
 
@@ -1071,7 +1069,7 @@ Any content (support inline tags too.io).
 
 
 
-## 2.9 时间轴 timeline
+## 时间轴 timeline
 
 {% tabs 分栏 %}
 
@@ -1158,7 +1156,7 @@ Any content (support inline tags too.io).
 
 {% endtabs %}
 
-## 2.10 链接卡片 link
+## 链接卡片 link
 
 {% tabs 分栏 %}
 
@@ -1180,7 +1178,7 @@ Any content (support inline tags too.io).
 
 {% endtabs %}
 
-## 2.11 按钮 btns
+## 按钮 btns
 
 {% tabs 分栏 %}
 
@@ -1239,16 +1237,16 @@ Any content (support inline tags too.io).
 ```markdown
 {% btns circle center grid5 %}
 <a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
-  <i class='fab fa-apple'></i>
-  <b>心率管家</b>
-  {% p red, 专业版 %}
-  <img src='https://cdn.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_pro.png'>
+<i class='fab fa-apple'></i>
+<b>心率管家</b>
+{% p red, 专业版 %}
+<img src='https://cdn.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_pro.png'>
 </a>
 <a href='https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1'>
-  <i class='fab fa-apple'></i>
-  <b>心率管家</b>
-  {% p green, 免费版 %}
-  <img src='https://cdn.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_lite.png'>
+<i class='fab fa-apple'></i>
+<b>心率管家</b>
+{% p green, 免费版 %}
+<img src='https://cdn.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_lite.png'>
 </a>
 {% endbtns %}
 ```
@@ -1272,16 +1270,16 @@ Any content (support inline tags too.io).
 3.圆形图标 + 标题 + 描述 + 图片 + 网格5列 + 居中
 {% btns circle center grid5 %}
 <a href='https://apps.apple.com/cn/app/heart-mate-pro-hrm-utility/id1463348922?ls=1'>
-  <i class='fab fa-apple'></i>
-  <b>心率管家</b>
-  {% p red, 专业版 %}
-  <img src='https://cdn.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_pro.png'>
+<i class='fab fa-apple'></i>
+<b>心率管家</b>
+{% p red, 专业版 %}
+<img src='https://cdn.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_pro.png'>
 </a>
 <a href='https://apps.apple.com/cn/app/heart-mate-lite-hrm-utility/id1475747930?ls=1'>
-  <i class='fab fa-apple'></i>
-  <b>心率管家</b>
-  {% p green, 免费版 %}
-  <img src='https://cdn.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_lite.png'>
+<i class='fab fa-apple'></i>
+<b>心率管家</b>
+{% p green, 免费版 %}
+<img src='https://cdn.jsdelivr.net/gh/fomalhaut1998/cdn-assets/qrcode/heartmate_lite.png'>
 </a>
 {% endbtns %}
 <!-- endtab -->
@@ -1290,7 +1288,7 @@ Any content (support inline tags too.io).
 
 
 
-## 2.12 github卡片 ghcard
+## github卡片 ghcard
 
 {% tabs 分栏 %}
 
@@ -1362,7 +1360,7 @@ Any content (support inline tags too.io).
 
 {% endtabs %}
 
-## 2.13 github徽标 ghbdage
+## github徽标 ghbdage
 
 
 
@@ -1436,7 +1434,7 @@ Any content (support inline tags too.io).
 
 {% endtabs %}
 
-## 2.14 网站卡片 sites
+## 网站卡片 sites
 
 {% tabs 分栏 %}
 
@@ -1473,7 +1471,7 @@ Any content (support inline tags too.io).
 
 {% endtabs %}
 
-## 2.15 行内图片 inlineimage
+## 行内图片 inlineimage
 
 {% tabs 分栏 %}
 
@@ -1508,7 +1506,7 @@ Any content (support inline tags too.io).
 
 {% endtabs %}
 
-## 2.16 单张图片 image
+## 单张图片 image
 
 {% tabs 分栏 %}
 
@@ -1560,7 +1558,7 @@ Any content (support inline tags too.io).
 
 {% endtabs %}
 
-## 2.17 音频 audio
+## 音频 audio
 {% tabs 分栏 %}
 
 <!-- tab 标签语法 -->
@@ -1583,7 +1581,7 @@ Any content (support inline tags too.io).
 
 {% endtabs %}
 
-## 2.18 视频 video
+## 视频 video
 
 {% tabs 分栏 %}
 <!-- tab 标签语法 -->
@@ -1641,20 +1639,20 @@ Any content (support inline tags too.io).
 {% endvideos %}
 3.25%宽度
 {% videos, 4 %}
-   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
-   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
-   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
-   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
-   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
-   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
-   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
-   {% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
+{% video https://github.com/volantis-x/volantis-docs/releases/download/assets/IMG_0341.mov %}
 {% endvideos %}
 <!-- endtab -->
 
 {% endtabs %}
 
-## 2.19 相册 gallery
+## 相册 gallery
 
 {% tabs 分栏 %}
 
@@ -1724,14 +1722,14 @@ markdown 圖片格式
 2.gallery 相册
 
 {% gallery %}
-![](https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg)
-![](https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg)
+![](http://cdn.this0.com/blog/img/Fze9jchtnyJXMHN.jpg?OSSAccessKeyId=LTAI5tAje5MhbPSKCC6QdGZb&Expires=9000000001&Signature=SBVMyLYQ5CTeMPZmo9ypR01Jhiw=&x-oss-process=style/cdn.this0)
+![](http://cdn.this0.com/blog/img/ryLVePaqkYm4TEK.jpg?OSSAccessKeyId=LTAI5tAje5MhbPSKCC6QdGZb&Expires=9000000000&Signature=W8YoOZKtHyBluHVB3myJXqYE0Ok=&x-oss-process=style/cdn.this0)
 {% endgallery %}
 <!-- endtab -->
 
 {% endtabs %}
 
-## 2.20 折叠框 folding
+## 折叠框 folding
 
 {% tabs 分栏 %}
 
@@ -1794,7 +1792,7 @@ hahaha <span><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E
 
 {% folding 查看图片测试 %}
 
-![](https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)
+![](http://cdn.this0.com/blog/img/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg?OSSAccessKeyId=LTAI5tAje5MhbPSKCC6QdGZb&Expires=9000000000&Signature=ia7NBCmnV+YhcBmo8uzDhcR8/G8=&x-oss-process=style/cdn.this0)
 
 {% endfolding %}
 
@@ -1835,7 +1833,7 @@ hahaha <span><img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/tieba/%E
 
 
 
-## 2.21 分栏 tab
+## 分栏 tab
 
 {% tabs 分栏 %}
 <!-- tab 标签语法 -->
@@ -2041,7 +2039,7 @@ Any content (support inline tags too).
 
 
 
-## 2.22 诗词标签 poem
+## 诗词标签 poem
 
 {% tabs 分栏 %}
 
@@ -2096,7 +2094,7 @@ Any content (support inline tags too).
 
 
 
-## 2.23 阿里图标 icon
+## 阿里图标 icon
 
 {% tabs 分栏 %}
 
@@ -2170,7 +2168,7 @@ Any content (support inline tags too).
 
 
 
-## 2.24 特效标签wow
+## 特效标签wow
 
 {% tabs 分栏 %}
 
@@ -2263,7 +2261,7 @@ Any content (support inline tags too).
 {% endtabs %}
 
 
-## 2.25  进度条 progress
+## 进度条 progress
 
 {% note info flat %}
 
@@ -2311,7 +2309,7 @@ Any content (support inline tags too).
 {% endtabs %}
 
 
-## 2.26 注释 notation
+## 注释 notation
 {% tabs 分栏 %}
 <!-- tab 标签语法 -->
 ```Markdown
@@ -2341,7 +2339,7 @@ Any content (support inline tags too).
 
 
 
-## 2.27 气泡注释 bubble
+## 气泡注释 bubble
 
 {% tabs 分栏 %}
 
@@ -2372,7 +2370,7 @@ Any content (support inline tags too).
 {% endtabs %}
 
 
-## 2.28 引用文献 reference
+## 引用文献 reference
 {% tabs 分栏 %}
 
 <!-- tab 标签语法 -->
@@ -2442,97 +2440,14 @@ Butterfly主题的各个衍生魔改{% referto '[6]','Butterfly 安装文档:标
 {% endtabs %}
 
 
-## 2.29 PDF展示
-
-{% tabs 分栏 %}
-<!-- tab 标签语法 -->
-```Markdown
-{% pdf 文件路径 %}
-```
-<!-- endtab -->
-
-<!-- tab 参数配置 -->
-
-1. `文件路径`: 可以是相对路径或者是在线链接
-
-<!-- endtab -->
-
-<!-- tab 示例源码 -->
-```Markdown
-# 1.本地文件:在md文件路径下创建一个同名文件夹，其内放pdf文件名为xxx.pdf的文件
-{% pdf xxx.pdf %}
-# 2.在线链接
-{% pdf https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/pdf/小作文讲义.pdf %}
-```
-<!-- endtab -->
-
-<!-- tab 渲染演示 -->
-2.在线链接(要放到最外层才能起作用)
-{% pdf https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/pdf/小作文讲义.pdf %}
-
-<!-- endtab -->
-
-{% endtabs %}
+## PDF展示 
+详情见[hexo-pdf](https://github.com/superalsrk/hexo-pdf)
 
 
-## 2.30 Hexo-tag-map 插件
+## Hexo-tag-map 插件 
+详情见[Hexo-tag-map](https://blog.guole.fun/posts/41887/)
 
-{% tabs 分栏 %}
-<!-- tab 标签语法 -->
-```Markdown
-{% + 标签值 + 经度 + 纬度 + 文本 + 缩放等级 + 宽 + 高 + 默认图层 + %}
-```
-<!-- endtab -->
-
-<!-- tab 参数配置 -->
-
-|     地图名      | 标签值 <必填> | 宽 (默认 100%) / 高 (默认 360px) | 缩放等级 (默认 14) | 宽 (默认 100%) / 高 (默认 360px) | 默认图层 (默认 1) |
-| :-------------: | :-----------: | :------------------------------: | :----------------: | :------------------------------: | :---------------: |
-|    混合地图     |      map      |  百分数或具体值 (100% 或 360px)  |     取值 3~18      |  百分数或具体值 (100% 或 360px)  |     取值 1~7      |
-|    谷歌地图     |   googleMap   |  百分数或具体值 (100% 或 360px)  |     取值 1~20      |  百分数或具体值 (100% 或 360px)  |     取值 1~3      |
-|    高德地图     |   gaodeMap    |  百分数或具体值 (100% 或 360px)  |     取值 3~18      |  百分数或具体值 (100% 或 360px)  |     取值 1~3      |
-|    百度地图     |   baiduMap    |  百分数或具体值 (100% 或 360px)  |     取值 4~18      |  百分数或具体值 (100% 或 360px)  |     取值 1~2      |
-|    Geoq 地图    |    geoqMap    |  百分数或具体值 (100% 或 360px)  |     取值 1~18      |  百分数或具体值 (100% 或 360px)  |     取值 1~5      |
-| openstreet 地图 | openstreetMap |  百分数或具体值 (100% 或 360px)  |     取值 1~18      |  百分数或具体值 (100% 或 360px)  |   不支持此参数    |
-
-1. 参数之间，用英文逗号相隔
-2. 参数必须按上述事例顺序输入，不得为空
-3. 同一个页面，同一组经纬度值，只能插入一个相同标签值的地图 (若有需要，可以将第二个地图上，经度或纬度末尾删除一两个数)
-4. 参数取值必须在上述范围内
-5. 默认图层：即地图叠加层的值，默认常规地图还是卫星地图，可按地图显示顺序取值
-6. 缩放等级，数字越大，地图比例尺越小，显示的越精细
-7. 除标签值外，其他参数选填，但 每个参数的左边的参数必填
-8. 谷歌地图需要外网才能加载查看
-
-坐标获取：[高德地图坐标拾取系统](https://lbs.amap.com/tools/picker) 、[百度地图坐标拾取系统](https://api.map.baidu.com/lbsapi/getpoint/index.html)
-
-
-
-
-
-<!-- endtab -->
-
-<!-- tab 示例源码 -->
-```Markdown
-{% map 120.101101,30.239119 %}
-{% googleMap 120.101101,30.239119, 这里是西湖灵隐寺，据说求姻缘很灵验哦！ %}
-{% geoqMap 120.101101,30.239119, 这里是西湖灵隐寺，据说求姻缘很灵验哦！, 13, 90%, 320px, 3 %}
-```
-<!-- endtab -->
-
-<!-- tab 渲染演示 -->
-{% map 120.101101,30.239119 %}
-<br>
-{% googleMap 120.101101,30.239119, 这里是西湖灵隐寺，据说求姻缘很灵验哦！ %}
-<br>
-{% geoqMap 120.101101,30.239119, 这里是西湖灵隐寺，据说求姻缘很灵验哦！, 13, 90%, 320px, 3 %}
-<br>
-<!-- endtab -->
-
-{% endtabs %}
-
-
-## 2.31 隐藏块
+## 隐藏块
 
 {% tabs 分栏 %}
 <!-- tab 标签语法 -->
@@ -2557,7 +2472,7 @@ content
 ```markdown
 {% hideBlock 点我预览, blue %}
 这里有张图片：
-<img src="https://s1.vika.cn/space/2022/10/30/b35fce448bc9404a8d65c3ce1e6e46eb" alt="image (1)" style="zoom:67%;" />
+<img src="https://cdn.this0.com/blog/base/pc%E7%AB%AF%E7%99%BD%E5%A4%A9.jpg" alt="image (1)" style="zoom:67%;" />
 {% endhideBlock %}
 ```
 <!-- endtab -->
@@ -2565,8 +2480,10 @@ content
 <!-- tab 渲染演示 -->
 {% hideBlock 点我预览, blue %}
 这里有张图片：
-<img src="https://s1.vika.cn/space/2022/10/30/b35fce448bc9404a8d65c3ce1e6e46eb" alt="image (1)" style="zoom:67%;" />
+![image-20231105004251628](http://cdn.this0.com/blog/img/image-20231105004251628.png?OSSAccessKeyId=LTAI5tAje5MhbPSKCC6QdGZb&Expires=9000000001&Signature=IdE5uGplvAcYCf1RO4bliuqXPnM=&x-oss-process=style/cdn.this0)
 {% endhideBlock %}
 <!-- endtab -->
 
 {% endtabs %}
+## 文章加密插件 
+详情见[文章加密插件](https://github.com/D0n9X1n/hexo-blog-encrypt)

@@ -9,7 +9,7 @@ description: 'Future is now 🍭🍭🍭'
 keywords: 'Java,MySQL,算法,代码,博客,Butterfly,Hexo,this0'
 author: this0
 language: zh-CN
-timezone: ''
+timezone: Asia/Shanghai
 
 # abbrlink config
 abbrlink:
@@ -123,9 +123,9 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  - type: git
-    repository:  # 这里写上你的Github地址
-    branch: main
+  type: git
+  repository: ypt@121.37.242.52:/home/ypt/blog.git
+  branck: master
   # - type: baidu_url_submitter
   # - type: git
   #   #repo改为repo: git@域名:/var/repo/hexo.git
@@ -169,10 +169,20 @@ swiper:
     name: recent-posts
     index: 0
   default_descr: 再怎么看我也不知道怎么描述它的啦！
-  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css #swiper css依赖
-  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js #swiper js依赖
-  custom_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css # 适配主题样式补丁
-  custom_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js # swiper初始化方法
+  swiper_css: https://cdn.this0.com/blog/base/css/swiper.min.css #swiper css依赖 替换成自己的
+  swiper_js: https://cdn.this0.com/blog/base/js/swiper.min.js #swiper js依赖 替换成自己的
+  custom_css: https://cdn.this0.com/blog/base/css/swiperstyle.css # 适配主题样式补丁 替换成自己的
+  custom_js: https://cdn.this0.com/blog/base/js/swiper_init.js # swiper初始化方法 替换成自己的
+#使用方法：
+#---
+#title: 文章标题
+#date: 创建日期
+#updated: 更新日期
+#cover: 文章封面
+#description: 文章描述
+#swiper_index: 1 #置顶轮播图顺序，非负整数，数字越大越靠前
+#---
+
 
 # 本地搜索
 search:
@@ -279,8 +289,8 @@ magnet:
     - name: 魔改教程
       display_name: 小Fの博客魔改教程
       icon: 🍉
-    - name: Java基础
-      display_name: 小FのJava基础笔记
+    - name: JavaSE
+      display_name: 小FのJavaSE
       icon: 🍟
     - name: 数据库
       display_name: 小Fの数据库笔记

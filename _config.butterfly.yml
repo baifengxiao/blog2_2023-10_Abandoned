@@ -3,41 +3,36 @@
 # --------------------------------------
 
 menu:
-  首页: / || icon-home || faa-tada
-  文章 || icon--article || faa-tada || hide:
-    归档: /archives/ || icon-guidang1 || faa-tada
-    标签: /tags/ || icon-sekuaibiaoqian || faa-tada
-    分类: /categories/ || icon-fenlei || faa-tada
-  休闲 || icon-pinweishenghuo || faa-tada || hide:
-    八音盒: /life/music/ ||icon-yinle || faa-tada
-    影院: /life/movies/ ||icon-dianying1 || faa-tada
-    游戏: /life/games/ || icon-youxishoubing || faa-tada
-  八宝箱 || icon-xiangzi || faa-tada || hide:
-    画廊: /box/gallery/ ||icon-tubiaozhizuomoban || faa-tada
-    动画: /box/animation/ || icon-nvwumao || faa-tada
-    网址导航: /box/nav/ || icon-zhifengche || faa-tada
-  社交 || icon-shejiaoxinxi || faa-tada || hide:
-    朋友圈: /social/fcircle/ || icon-pengyouquan || faa-tada
-    留言板: /comments/ || icon-liuyan || faa-tada
-    友人帐: /social/link/ || icon-lianjie || faa-tada
-  网站 || icon-wangye || faa-tada || hide:
-    网站统计: /site/census/ || icon--tongjibiao || faa-tada
-    文章统计: /site/echarts/ || icon-shujutongji1 || faa-tada
-    旧时光: /site/time/ || icon-xianxingshalou || faa-tada
-  个人 || icon-maoliang || faa-tada || hide:
-    唠叨: /personal/bb/ || icon-qunliaotian || faa-tada
-    恋爱小屋: /personal/love/ || icon-love-sign || faa-tada
-    关于: /personal/about/ || icon-paperplane || faa-tada
+  首页: / || icon-home
+  文章 || icon-wenzhang:
+    归档: /archives/ || icon-guidang
+    标签: /tags/ || icon--shuqian
+    分类: /categories/ || icon-fenlei
+  休闲 || icon-xiuxian:
+    音乐: /xiuxian/music/ || icon-yinyue
+    相册: /xiuxian/gallery/ || icon-xiangce
+    游戏: /xiuxian/game/ || icon-youxi
+  百宝箱||icon-baibaoxiang:
+    网址导航: /baibaoxiang/daohang/ || icon-wangzhidaohang
+  网站||icon-wangzhan:
+    网站统计: /wangzhan/census/ || icon-wenzhangtongji
+    留言板: /wangzhan/comments/ || icon-liuyanban
+    时间轴: /wangzhan/timeline/ || icon-shijianzhou
+  个人||geren:
+    唠叨: /geren/laodao/ || icon-laodao
+    秘密花园: /geren/secret/ || icon-mimi
+    关于: /geren/about/ || icon-guanyu
+
 
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
-highlight_copy: true # copy button
+highlight_theme: mac light #主题颜色  darker / pale night / light / ocean / mac / mac light / false
+highlight_copy: true #代码复制 copy button
 highlight_lang: true # show the code language
-highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-highlight_height_limit: 230 # unit: px
-code_word_wrap: false
+highlight_shrink: false #代码自动展开 true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
+highlight_height_limit: 230 #代码高度限制 unit: px 超出限制要点击手动展开
+code_word_wrap: false #代码自动换行
 
 # copy settings
 # copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
@@ -49,14 +44,14 @@ copy:
 
 # social settings (社交圖標設置)
 # formal:
-#   icon: link || the description
+#   icon: link || the description || color
 social:
   # Github: https://github.com/fomalhaut1998 || icon-github || faa-tada
   微信: /assets/QRCode.jpg || icon-weixin || faa-tada
-  QQ: https://res.abeim.cn/api/qq/?qq=1174008660 || icon-QQ || faa-tada
-  B站: https://space.bilibili.com/220757832 || icon-bilibili || faa-tada
-  QQ邮箱: mailto:1174008660@qq.com || icon-youxiang || faa-tada
-  力扣: https://leetcode.cn/u/fomalhaut1998 || icon-leetcode || faa-tada
+  QQ: https://res.abeim.cn/api/qq/?qq=2686630689 || icon-QQ || faa-tada
+  B站: https://space.bilibili.com/3537120402606393 || icon-bilibili || faa-tada
+  邮箱: mailto:javaer@111.com || icon-youxiang || faa-tada
+#  力扣: https://leetcode.cn/u/fomalhaut1998 || icon-leetcode || faa-tada
   # 微博: https://weibo.com/u/6473136435 || icon-weibo || faa-tada
   # 知乎: https://www.zhihu.com/people/liang-jia-chao-19 || icon-shejiaotubiao-10 || faa-tada
   # RSS: /atom.xml || icon-RSS || faa-tada
@@ -71,16 +66,6 @@ social:
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
 # --------------------------------------
-
-# Algolia search
-algolia_search:
-  enable: false
-  hits:
-    per_page: 5
-  labels:
-    input_placeholder: Search for Posts
-    hits_empty: "我们没有找到任何搜索结果: ${query}"
-    hits_stats: "找到${hits}条结果（用时${time} ms）"
 
 # Local search
 local_search:
@@ -113,7 +98,7 @@ favicon:
 
 # Avatar (頭像)
 avatar:
-  img: https://tuchuang.voooe.cn/images/2023/01/02/avatar.webp
+  img: https://cdn.this0.com/blog/base/avatar.png
   effect: false
 
 # Disable all banner image
@@ -156,8 +141,9 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - https://source.fomal.cc/img/default_cover_14.webp
-    # ...
+    - https://cdn.this0.com/blog/base/default-cover.jpg
+
+
 
 # A simple 404 page
 error_404:
@@ -222,12 +208,12 @@ post_copyright:
 # Sponsor/reward
 reward:
   enable: true
-  coinAudio: https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a
+  coinAudio: https://cdn.this0.com/blog/base/m4a/aowu.m4a
   QR_code:
-    - img: https://tuchuang.voooe.cn/images/2023/01/04/2.webp
-      link:
+    - img: https://cdn.this0.com/blog/base/wechat.jpg
+      link: #link可以不写，会默认为图片的链接。
       text: 微信
-    - img: https://tuchuang.voooe.cn/images/2023/01/04/20f8e49805975b8f8.webp
+    - img: https://cdn.this0.com/blog/base/alipay.jpg
       link:
       text: 支付宝
 
@@ -276,7 +262,7 @@ addThis:
 # Share.js
 # https://github.com/overtrue/share.js
 sharejs:
-  enable: false
+  enable: true
   sites: facebook,twitter,wechat,weibo,qq
 
 # AddToAny
@@ -379,9 +365,9 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: 
-  region:
-  visitor: false
+  envId: https://twikoo-vercel.this0.com    #替换为自己的api
+  region: ap-chengdu  #替换为自己的区域，可选
+  visitor: true   #是否显示阅读数
   option:
 
 # Giscus
@@ -407,7 +393,7 @@ remark42:
 
 # Chat Button [recommend]
 # It will create a button in the bottom right corner of website, and hide the origin button
-chat_btn: false
+chat_btn: true
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
 chat_hide_show: true
@@ -422,7 +408,7 @@ chatra:
 # https://www.tidio.com/
 tidio:
   enable: false
-  public_key: 3t32opveizex3f0gpkosins3l0ubkxgr
+  public_key:
 
 # daovoice
 # http://daovoice.io/
@@ -439,18 +425,17 @@ gitter:
 # crisp
 # https://crisp.chat/en/
 crisp:
-  enable: false
-  website_id:
+  enable: true
+  website_id: 6a9fd556-c343-47a3-9b3c-d19b7402038e #替换成自己的
 
 # Footer Settings
 # --------------------------------------
 footer:
   owner:
     enable: true
-    since: 2022
-  custom_text:
+    since: 2023
+  custom_text: <universe.js href="https://beian.miit.gov.cn/#/Integrated/index"><img class="icp-icon" src="https://img.shields.io/badge/%E8%9C%80ICP%E5%A4%87-2023013130%E5%8F%B7--2-e1d492?style=flat&logo=data:image/png;base64,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"></universe.js>
   copyright: false # Copyright of theme and framework
-
 # Analysis
 # --------------------------------------
 
@@ -540,15 +525,14 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-# "#e4f4f6" "#efefef"
 background:
-  #【必选】默认背景 
+  #【必选】默认背景
   default: var(--default-bg)
-  #【可选】PC端夜间模式背景 
+  #【可选】PC端夜间模式背景
   darkmode: var(--darkmode-bg)
-  #【可选】移动端日间默认背景 
+  #【可选】移动端日间默认背景
   mobileday: var(--mobileday-bg)
-  #【可选】移动端夜间模式背景 
+  #【可选】移动端夜间模式背景
   mobilenight: var(--mobilenight-bg)
 
 # Footer Background
@@ -750,7 +734,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: false
-  publish_date: 8/9/2022 00:00:00
+  publish_date: 12/26/2023 03:33:33
 
 # Aside widget - Newest Comments
 newest_comments:
@@ -927,6 +911,7 @@ inject:
     - <script async src="//at.alicdn.com/t/c/font_3586335_hsivh70x0fm.js"></script> # js图标引入1
     - <script async src="//at.alicdn.com/t/c/font_3636804_gr02jmjr3y9.js"></script> # js图标引入2
     - <script async src="//at.alicdn.com/t/c/font_3612150_kfv55xn3u2g.js"></script> # js图标引入3
+    - <script async src="//at.alicdn.com/t/c/font_4256434_m2diff1tw29.js"></script> # js图标引入4
     - <script async src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script>  # 新年元宝
     - <canvas id="universe"></canvas> # 星空画布
     - <canvas id="snow"></canvas> # 雪花画布
@@ -1075,16 +1060,16 @@ wowjs:
 envelope_comment:
   enable: true #控制开关
   custom_pic:
-    cover: https://tuchuang.voooe.cn/images/2023/01/02/violet.webp #信笺头部图片
-    line: https://tuchuang.voooe.cn/images/2023/01/02/line.webp #信笺底部图片
-    beforeimg: https://tuchuang.voooe.cn/images/2023/01/02/before.webp # 信封前半部分
-    afterimg: https://tuchuang.voooe.cn/images/2023/01/02/after.webp # 信封后半部分
+    cover: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/%E4%BF%A1%E7%AC%BA%E5%A4%B4%E9%83%A8%E5%9B%BE%E7%89%87.jpg #信笺头部图片
+    line: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/%E4%BF%A1%E7%AC%BA%E5%BA%95%E9%83%A8%E5%9B%BE%E7%89%87.webp #信笺底部图片
+    beforeimg: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/%E4%BF%A1%E5%B0%81%E5%89%8D%E5%8D%8A%E9%83%A8%E5%88%86.webp # 信封前半部分
+    afterimg: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/%E4%BF%A1%E5%B0%81%E5%90%8E%E5%8D%8A%E9%83%A8%E5%88%86.webp # 信封后半部分
   message: #信笺正文，多行文本，写法如下
-    - 本站有哪些做得好或者不好的地方？
-    - 或者你有什么改进的建议？
-    - 又或者你有什么具体的问题需要咨询？
-    - 都可以在下方评论区留言哦~~~
-  bottom: F小站站长亲自为您服务！ #仅支持单行文本
+    - 有什么想问的？
+    - 有什么想说的？
+    - 有什么想吐槽的？
+    - 哪怕是有什么想吃的，都可以告诉我哦~
+  bottom: 为您服务！ #仅支持单行文本
   height: #1050px，信封划出的高度
   path: #【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html
   front_matter: #【可选】comments页面的 front_matter 配置
@@ -1122,3 +1107,50 @@ index_card_style: multicard # slidecard | multicard
 # 灯笼开关 建议只在过年期间开启
 lantern:
   enable: false
+
+
+# footer_beautify
+# 页脚计时器：[Native JS Timer](https://akilar.top/posts/b941af/)
+# 页脚徽标：[Add Github Badge](https://akilar.top/posts/e87ad7f8/)
+footer_beautify:
+  enable:
+    timer: false # 计时器开关
+    bdage: true # 徽标开关
+  priority: 5 #过滤器优先权
+  enable_page: all # 应用页面
+  exclude: #屏蔽页面
+  # - /posts/
+  # - /about/
+  layout: # 挂载容器类型
+    type: id
+    name: footer-wrap
+    index: 0
+  # 计时器部分配置项（看你喜欢哪个，最好下载下来放到自己的项目中不然会增加我网站的负载）
+  # 这是我的 内容替换成自己的
+  runtime_js: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/js/runtime.js
+  runtime_css: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/css/runtime.css
+  # 徽标部分配置项
+  swiperpara: 0 #若非0，则开启轮播功能，每行徽标个数
+  bdageitem:
+    - link: https://hexo.io/ #徽标指向网站链接
+      shields: https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo #徽标API
+      message: 博客框架为Hexo_v6.3.0 #徽标提示语
+    - link: https://butterfly.js.org/
+      shields: https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender
+      message: 主题版本Butterfly_v4.3.1
+    #    - link: https://vercel.com/
+    #      shields: https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&logo=Vercel
+    #      message: 本站采用多线部署，主线路托管于Vercel
+    #    - link: https://dashboard.4everland.org/
+    #      # https://img.shields.io/badge/Hosted-4EVERLAND-3FE2C1?style=flat&logo=IPFS
+    #      shields: https://img.shields.io/badge/Hosted-4EVERLAND-22DDDD?style=flat&logo=IPFS
+    #      message: 本站采用多线部署，备用线路托管于4EVERLAND
+    - link: https://github.com/
+      shields: https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub
+      message: 本站项目由Github托管
+    - link: http://creativecommons.org/licenses/by-nc-sa/4.0/
+      shields: https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris
+      message: 本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可
+  swiper_css: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/css/swiper.min.css
+  swiper_js: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/js/swiper.min.js
+  swiperbdage_init_js: https://this0.oss-cn-chengdu.aliyuncs.com/blog/base/js/swiper_init.js
