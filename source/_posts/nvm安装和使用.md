@@ -10,13 +10,13 @@ abbrlink: 2023825a
 date: 2023-10-26 05:36:00
 ---
 
-# nvm安装和使用
+### nvm安装和使用
 
-## 1. 下载nvm安装包
+#### 1. 下载nvm安装包
 
 ​	[网站同款linux安装包下载](https://github.com/nvm-sh/nvm/archive/refs/tags/v0.39.4.tar.gz)
 
-## 2. 解压nvm到指定目录
+#### 2. 解压nvm到指定目录
 
 ```bash
 #新建服务器nvm地址
@@ -25,7 +25,7 @@ mkdir /root/.nvm
 tar -zxvf nvm-0.39.4.tar.gz --strip-components 1  -C /root/.nvm
 ```
 
-## 3. 配置环境变量
+#### 3. 配置环境变量
 
 ```bash
 vim ~/.bashrc
@@ -40,19 +40,19 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 ```
 
-## 4. 使环境配置生效
+#### 4. 使环境配置生效
 
 ```bash
 source ~/.bashrc
 ```
 
-## 5. 验证nvm是否安装成功
+#### 5. 验证nvm是否安装成功
 
 ```bash
 nvm -v
 ```
 
-## 6. node常用操作：
+#### 6. node常用操作：
 
 ```
 #nvm常用命令

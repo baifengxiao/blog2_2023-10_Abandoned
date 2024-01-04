@@ -11,29 +11,29 @@ date: 2023-10-26 05:36:00
 ---
 # nginx基本使用
 
-## 一、nginx安装和管理
+### 一、nginx安装和管理
 
-### 1. 安装nginx
+#### 1. 安装nginx
 
 sudo yum install nginx
 
-### 2. 设置nginx开机自启
+#### 2. 设置nginx开机自启
 
 systemctl enable nginx
 
-### 3. 启动nginx
+#### 3. 启动nginx
 
 start nginx
 
-### 4. 重启Nginx
+#### 4. 重启Nginx
 
 systemctl restart nginx
 
-### 5. 查看nginx启动状态
+#### 5. 查看nginx启动状态
 
 systemctl status nginx
 
-## 二、nginx配置和最佳实践
+### 二、nginx配置和最佳实践
 
 > 注意事项
 
@@ -61,7 +61,7 @@ sudo firewall-cmd --reload
   - `/opt/<site_name>`
   - `/usr/share/nginx/html`
 
-## 三、具体配置
+### 三、具体配置
 
 #### 第1步：配置this0.conf
 

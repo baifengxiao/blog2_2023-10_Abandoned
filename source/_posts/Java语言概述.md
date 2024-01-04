@@ -7,23 +7,23 @@ categories:
 description: JavaSE(一)
 abbrlink: 7b76819b
 ---
-# Java语言概述
+### Java语言概述
 
-## 1. Java的特点与跨平台原理
+#### 1. Java的特点与跨平台原理
 
-### 1. 面向对象性：
+##### 1.1. 面向对象性：
 
 两个要素：类、对象
 
 三个特征：封装、继承、多态
 
-### 2. 健壮性：
+##### 1.2. 健壮性：
 
 ① 去除了C语言中的指针 
 
 ②自动的垃圾回收机制 -->仍然会出现内存溢出、内存泄漏
 
-### 3. 跨平台型：
+##### 1.3. 跨平台型：
 
 write once,run anywhere:一次编译，到处运行
 
@@ -31,20 +31,18 @@ Java的跨平台：指的是一处编写到处运行。
 
 Java如何实现的跨平台，借助JVM实现，不同的平台只要有JVM就可以运行Java程序。
 
-
-
-## 2. JVM-JRE-JDK关系
+#### 2. JVM-JRE-JDK关系
 
 **JVM：**Java Virtual Machine --- Java虚拟机
 **JRE：**Java Runtime Environment --- Java运行环境=JVM+核心类库
 **JDK: ** Java Development Kit--- Java开发工具集=JRE+开发小工具
 
-## 3. JDK的安装与环境变量配置
+#### 3. JDK的安装与环境变量配置
 
 示例中的安装路径:D:\SDE_YPT\Java\jdk1.8.0_201
 ![image-20231109141639401](http://cdn.this0.com/blog/img/image-20231109141639401.png?OSSAccessKeyId=LTAI5tAje5MhbPSKCC6QdGZb&Expires=9000000000&Signature=9sFYjnC2C44je1Y6x7f3EzDDkks=&x-oss-process=style/cdn.this0)
 
-### 1. 配置JAVA_HOME
+##### 3.1. 配置JAVA_HOME
 
 > 系统变量用来指向一个路径，这里用JAVA_HOME指向jdk的安装路径
 
@@ -58,13 +56,13 @@ java命令都在安装路径的bin文件下，比如常用的java，javac
 
 ![image-20231109142351822](http://cdn.this0.com/blog/img/image-20231109142351822.png?OSSAccessKeyId=LTAI5tAje5MhbPSKCC6QdGZb&Expires=9000000001&Signature=oc1bSb5RP2inN7JAz9X0U/sUDL8=&x-oss-process=style/cdn.this0)
 
-### 2. 配置Path
+##### 3.2. 配置Path
 
 **变量名：**Path
 **变量值：**（注意，是新增！）%JAVA_HOME%\bin
 ![image-20231109142455558](http://cdn.this0.com/blog/img/image-20231109142455558.png?OSSAccessKeyId=LTAI5tAje5MhbPSKCC6QdGZb&Expires=9000000001&Signature=s3O3ObxrloGL9rrzJjLCEkzbjKo=&x-oss-process=style/cdn.this0)
 
-## 4. 编写第一个Java程序
+#### 4. 编写第一个Java程序
 
 ```java
 public class HelloWorld {
@@ -74,20 +72,20 @@ public class HelloWorld {
 }
 ```
 
-## 5. Java开发步骤即代码编写相关注意问题
+#### 5. Java开发步骤即代码编写相关注意问题
 
 编译: javac
 C:\Users\yupen>javac C:\Users\yupen\Desktop\HelloWorld.java
 运行: java 
 C:\Users\yupen\Desktop>java HelloWorld
 
-### 1. 开发Java程序的步骤：3步
+##### 5.1. 开发Java程序的步骤：3步
 
 **编写：**我们将编写的java代码保存在以".java"结尾的源文件中
 **编译：**使用javac.exe命令编译我们的java源文件，产生后缀为.class的字节码文件。格式：javac 源文件名.java
 **运行：**使用java.exe命令解释运行我们的字节码文件。 格式：java 类名
 
-### 2. 第一个程序总结
+##### 5.2. 第一个程序总结
 
 * Java源文件以“java”为扩展名。源文件的基本组成部分是类（class），如 本例中的HelloWorld类。 
 * Java应用程序的执行入口是main()方法。它有固定的书写格式：
@@ -103,7 +101,7 @@ public class HelloWorld {
 * 大括号都是成对出现的，缺一不可。
 * 一个源文件中最多只能有一个public类。其它类的个数不限，如果源文件包含 一个public类，则文件名必须按该类名命名。
 
-## 6. 注释
+#### 6. 注释
 
 > 注释：一些让程序员开的说明性的文字。不会影响程序的运行。
 
@@ -111,7 +109,7 @@ public class HelloWorld {
    多行注释：/*注释内容 */
    文档注释：/** 注释内容 */
 
-## 7. 关键词
+#### 7. 关键词
 
 **定义：**被Java语言赋予了特殊含义，用做专门用途的字符串（单词），眼熟就好
 
@@ -137,7 +135,7 @@ public class HelloWorld {
 用于定义数据类型值的字面值
 **true false null**
 
-## 8. 标识符的命名规则与规范
+#### 8. 标识符的命名规则与规范
 
 > 定义：凡是自己可以起名字的地方都叫标识符。
 
@@ -165,7 +163,7 @@ public class HelloWorld {
 **注意1**：在起名字时，为了提高阅读性，要尽量有意义，“见名知意”。
 **注意2**：java采用unicode字符集，因此标识符也可以使用汉字声明，但是不建议使用。
 
-## 9. 字面常量
+#### 9. 字面常量
 
 > 程序运行过程中不可改变的量
 
@@ -181,9 +179,9 @@ public class HelloWorld {
 | 布尔字面量 | true，false |
 | 空值字面量 | null |
 
-## 10. 变量
+#### 10. 变量
 
-### 1. 变量的理解：
+##### 10.1. 变量的理解：
 
 * 内存中的一个存储区域
 
@@ -193,7 +191,7 @@ public class HelloWorld {
 
 * **作用:用于在内存中保存数据**
 
-### 2. 声明与赋值
+##### 10.2. 声明与赋值
 
 1. **先声明再赋值**
    数据类型 变量名；
@@ -211,7 +209,7 @@ public class HelloWorld {
    数据类型 变量1，变量2，变量3，...;
    例如：____
 
-### 3.变量的使用注意事项：
+##### 10.3.变量的使用注意事项：
 
   1. 变量必须**先声明才能使用**,否则报错：错误: 找不到符号
   2. 变量必须**先初始化值**才能使用,否则，错误: 可能尚未初始化变量age
